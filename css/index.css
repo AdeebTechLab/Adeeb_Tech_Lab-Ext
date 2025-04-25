@@ -1,0 +1,46 @@
+body {
+    width: 350px;
+    height: 350px;
+    background-color: #394251;
+    justify-content: center; 
+}
+
+
+.bte{
+	margin: 50px;
+}
+
+h1{
+	color: white;
+	font-size: 150%
+}
+
+
+p {
+	margin-top: -10px;
+    font-size: 15px;
+    color: white;
+
+}
+
+
+
+  a:link, a:visited {
+    padding: 16px 32px;
+      background-color: white; 
+        color: black; 
+       /* border: 2px solid #003060; */
+    }
+    
+    a:hover, a:active {
+       background-color: #ff8e01;
+        color: white;
+    }
+
+    img {
+        margin-top: 10px;
+        margin-bottom: -10px;
+        margin-right: auto;
+        margin-left: auto;
+        
+      }
