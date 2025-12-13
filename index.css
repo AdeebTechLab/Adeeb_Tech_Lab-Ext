@@ -1,0 +1,725 @@
+       /* Home Page CSS Code  */
+
+       body {
+
+        width: 350px;
+    height: 500px;
+    background-color: white;
+    justify-content: center;
+           margin: 0;
+           font-family: Arial;
+           padding-bottom: 70px;
+       }
+
+       header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 25px 18px;
+           background: #242c3c;
+           color: #fff;
+           position: relative;
+       }
+
+       .header-left {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+       }
+
+       .header-left img {
+           height: 85px;
+           width: 85px;
+           border-radius: 10px;
+       }
+
+       .header-left span {
+           font-size: 20px;
+           font-weight: bold;
+       }
+
+       .bell-img {
+           height: 30px;
+           width: 30px;
+       }
+
+       .search-area {
+           width: 91%;
+           display: flex;
+           justify-content: center;
+           position: absolute;
+           bottom: -25px;
+           z-index: 10;
+       }
+
+       .search-box {
+           display: flex;
+           align-items: center;
+           width: 100%;
+           padding: 12px 15px;
+           font-size: 15px;
+           border-radius: 15px;
+           background: #fff;
+           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+       }
+
+       .search-box i {
+           color: #777;
+           font-size: 15px;
+           margin-right: 10px;
+       }
+
+       .search-box input {
+           width: 100%;
+           border: none;
+           outline: none;
+           font-size: 15px;
+       }
+
+       .spacer {
+           height: 40px;
+       }
+
+       .slider {
+           position: relative;
+           width: 100%;
+           height: 180px;
+           overflow: hidden;
+       }
+
+       .slide {
+           width: 100%;
+           height: 100%;
+           position: absolute;
+           opacity: 0;
+           transition: opacity 0.7s ease-in-out;
+       }
+
+       .slide img {
+           width: 100%;
+           height: 100%;
+           border-radius: 20px;
+           object-fit: cover;
+       }
+
+       .slide.active {
+           opacity: 1;
+       }
+
+
+       .popular-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 15px;
+       }
+
+       .popular-boxes {
+           display: flex;
+           gap: 14px;
+           padding: 18px 10px;
+           overflow-x: auto;
+       }
+
+       .popular-item {
+           min-width: 80px;
+           text-align: center;
+           text-decoration: none;
+           color: #000;
+       }
+
+       .popular-item img {
+           width: 60px;
+           height: 60px;
+           border-radius: 0;
+           background: none;
+           padding: 0;
+           box-shadow: none;
+           object-fit: cover;
+       }
+
+       .popular-item p {
+           font-size: 12px;
+           margin: 5px 0 0 0;
+       }
+
+       .solutions-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 15px;
+       }
+
+       .solutions-header span {
+           color: #000;
+           cursor: pointer;
+           font-weight: 500;
+       }
+
+
+       .grid {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 10px;
+       }
+
+
+       .card {
+           text-decoration: none;
+           color: #000;
+       }
+
+       .card-inner {
+           background: #fff;
+           padding: 8px;
+           border-radius: 8px;
+           text-align: center;
+       }
+
+       .card-inner img {
+           width: 100%;
+           height: 80px;
+           object-fit: contain;
+           border-radius: 6px;
+       }
+
+       .card-inner p {
+           font-size: 12px;
+           margin: 6px 0 2px;
+       }
+
+       .video-info {
+           font-size: 10px;
+           color: #666;
+       }
+
+       #toggle-see-more {
+           background: none;
+
+           color: #000;
+
+           border: none;
+           padding: 5px 0;
+           font-size: 14px;
+           font-weight: 500;
+           cursor: pointer;
+       }
+
+       .see-more-container {
+           text-align: center;
+           margin-top: 10px;
+       }
+
+
+       .hidden {
+           display: none;
+       }
+
+
+       .fc-header {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px;
+       }
+
+       .fc-seeall {
+           color: #000;
+           cursor: pointer;
+       }
+
+       .fc-wrapper {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+           padding: 10px;
+       }
+
+       .fc-card {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           gap: 12px;
+           background: #f4fdff;
+           padding: 21px;
+           border-radius: 12px;
+           text-decoration: none;
+           color: #000;
+       }
+
+       .fc-img {
+           width: 70px;
+           height: 70px;
+           object-fit: contain;
+           flex-shrink: 0;
+       }
+
+       .fc-info {
+           flex: 1;
+           margin: 0 12px;
+           min-width: 0;
+       }
+
+       .fc-info h4 {
+           margin: 0;
+           font-size: 14px;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+       }
+
+       .fc-info p {
+           margin: 2px 0;
+           font-size: 11px;
+           color: #666;
+       }
+
+       .fc-icons {
+           font-size: 11px;
+           display: flex;
+           gap: 10px;
+           margin-top: 6px;
+       }
+
+       .fc-right-icon {
+           width: 28px;
+           height: 28px;
+           object-fit: contain;
+           flex-shrink: 0;
+       }
+
+       .fc-hidden {
+           display: none;
+       }
+
+       .fc-more {
+           text-align: center;
+           padding: 8px 10px;
+       }
+
+       #fcBtn {
+           background: none;
+           border: none;
+           color: #000;
+           font-size: 14px;
+           cursor: pointer;
+       }
+
+       /* Home footer where buttons are add  */
+
+       .app-footer {
+           position: fixed;
+           bottom: 0;
+           left: 0;
+           width: 100%;
+           height: 60px;
+           background: #ffffff;
+           border-top: 1px solid #ddd;
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+           z-index: 1000;
+       }
+
+
+       .nav-btn {
+           flex: 1;
+           height: 100%;
+           background: none;
+           border: none;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           font-size: 11px;
+           color: #777;
+           cursor: pointer;
+       }
+
+       .nav-btn img {
+           width: 22px;
+           height: 22px;
+       }
+
+
+       .icon-on {
+           display: none;
+       }
+
+       .nav-btn.active .icon-off {
+           display: none;
+       }
+
+       .nav-btn.active .icon-on {
+           display: block;
+       }
+
+
+       .nav-btn.active {
+           color: #000;
+       }
+
+       /* Page system */
+       .page {
+           display: none;
+           position: relative;
+           min-height: 100vh;
+       }
+
+       .page.active {
+           display: block;
+       }
+
+       /*  DOWNLOAD PAGE */
+       #download {
+           background: url("Assets/download.jpg") no-repeat center top;
+           background-size: cover;
+           background-attachment: fixed;
+       }
+
+
+       .download-card {
+           background: #fff;
+           width: 95%;
+           padding: 15px 28px;
+           border-radius: 10px;
+           margin-bottom: 12px;
+           margin-left: 9px;
+
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+
+           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+       }
+
+
+       .download-card h4 {
+           font-size: 14px;
+           font-weight: 500;
+           color: #000;
+           margin: 0;
+       }
+
+
+       .visit-btn {
+           background: orange;
+           color: #fff;
+           padding: 5px 14px;
+           border-radius: 6px;
+           font-size: 12px;
+           text-decoration: none;
+           font-weight: 500;
+       }
+
+       .visit-btn:hover {
+           opacity: 0.9;
+       }
+
+       /* Share  page CSS */
+
+       .share-wrapper {
+           padding: 15px;
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+       }
+
+       .share-card {
+           background: #f4fdff;
+           border-radius: 14px;
+           padding: 18px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+       }
+
+
+       .share-img {
+           width: 75px;
+           height: 75px;
+           object-fit: contain;
+           flex-shrink: 0;
+       }
+
+
+       .share-info {
+           flex: 1;
+           min-width: 0;
+       }
+
+       .share-info h4 {
+           margin: 0;
+           font-size: 15px;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+       }
+
+       .share-info small {
+           font-size: 11px;
+           color: #777;
+       }
+
+       .share-stats {
+           margin-top: 6px;
+           font-size: 11px;
+           color: #555;
+       }
+
+       .share-actions {
+           display: flex;
+           flex-direction: column;
+           gap: 10px;
+       }
+
+       .share-actions img {
+           width: 24px;
+           height: 24px;
+       }
+
+       /* Profile  page CSS */
+
+
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           font-family: Arial, sans-serif;
+       }
+
+
+       .profile-page {
+           height: 100vh;
+           position: relative;
+           background: #000;
+           color: #fff;
+       }
+
+
+       .bg-one {
+           height: 26vh;
+           background: url("Assets/trofy.jpg") no-repeat top center/cover;
+           /* clip-path: polygon(1 0, 100% 0, 100% 70%, 70% 100%, 0 100%); */
+       }
+
+
+       .profile-pic {
+           width: 110px;
+           height: 110px;
+           border-radius: 50%;
+           border: 4px solid #f5c400;
+           position: absolute;
+           top: 17vh;
+           left: 16px;
+           object-fit: cover;
+           background: #fff;
+           z-index: 10;
+       }
+
+
+       .bg-two {
+           height: 65vh;
+           background: url("Assets/download.jpg") no-repeat center/cover;
+           clip-path: polygon(1 30%, 30% 0, 100% 0, 100% 100%, 0 100%);
+           padding-top: 70px;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+       }
+
+
+       .profile-content {
+           padding: 0 16px;
+       }
+
+       .profile-content h1 {
+           font-size: 20px;
+           margin-bottom: 4px;
+       }
+
+       .role {
+           font-size: 13px;
+           opacity: 0.8;
+       }
+
+       .brand {
+           color: #f5c400;
+           font-weight: 600;
+           margin-bottom: 8px;
+       }
+
+       .about {
+           font-size: 12px;
+           line-height: 1.5;
+       }
+
+       .social-img {
+           margin: 12px 0;
+           display: flex;
+           justify-content: center;
+       }
+
+       .social-img img {
+           width: 80%;
+           max-width: 300px;
+       }
+
+
+       .profile-footer {
+           font-size: 10px;
+           text-align: center;
+           padding-bottom: 10px;
+           opacity: 0.8;
+       }
+
+       /* About Page CSS  */
+
+       .about-header {
+           background: #b5892b;
+           color: #fff;
+           text-align: center;
+           padding: 22px;
+           font-weight: 600;
+           font-size: 16px;
+       }
+
+       .about-main {
+           background: #e3e3e3;
+           padding: 25px 0;
+       }
+
+       .about-container {
+           background: #fff;
+           margin: 0 14px;
+           border-radius: 14px;
+           padding-bottom: 18px;
+           box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+       }
+
+       .about-image-wrap {
+           text-align: center;
+           padding: 20px 0;
+       }
+
+       .about-bg-img {
+           width: 75%;
+           margin-bottom: -102px;
+           margin-top: -92px;
+       }
+
+
+       .about-text {
+           text-align: center;
+           font-size: 13px;
+           line-height: 1.7;
+           padding: 0 18px;
+       }
+
+
+       .about-links {
+           margin-top: 20px;
+           padding: 0 12px;
+       }
+
+       .about-link {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           background: #f7f7f7;
+           padding: 12px;
+           border-radius: 14px;
+           margin-bottom: 12px;
+       }
+
+       .about-link img {
+           width: 50px;
+           height: 50px;
+           border-radius: 10px;
+       }
+
+       .link-info {
+           flex: 1;
+       }
+
+       .link-info span {
+           font-size: 14px;
+           font-weight: 600;
+           display: block;
+       }
+
+       .link-info small {
+           font-size: 12px;
+           color: #666;
+       }
+
+
+       .visit-btn {
+           background: #b5892b;
+           color: #fff;
+           padding: 7px 16px;
+           border-radius: 20px;
+           font-size: 12px;
+           text-decoration: none;
+           transition: 0.3s;
+       }
+
+       .visit-btn:hover {
+           background: #9f7622;
+       }
+
+
+       .about-page-footer {
+           background: #2b2b2b;
+           color: #fff;
+           text-align: center;
+           padding: 14px;
+           font-size: 13px;
+       } 
+
+       @media (min-width: 768px) {
+
+           .bg-one {
+               height: 350px;
+               background: url("Assets/trofy.jpg") no-repeat center center;
+               background-size: cover;
+               background-color: #000;
+               clip-path: none;
+           }
+
+       }
+
+       @media (min-width: 768px) {
+           .profile-pic {
+               top: 50vh;
+
+
+           }
+
+       }
+
+
+       @media (min-width: 768px) {
+           .about-bg-img {
+               margin-top: -261px;
+
+           }
+       }
+
+       @media (min-width: 768px) {
+           .about-text {
+               margin-top: 40px;
+           }
+       }
+
+       @media (min-width: 768px) {
+           .popular-boxes {
+               padding: 19px 240px;
+           }
+       }
+
+       @media (min-width: 768px) {
+           .slide img {
+               object-fit: contain
+           }
+       }
