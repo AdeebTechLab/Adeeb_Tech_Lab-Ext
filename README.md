@@ -60,12 +60,7 @@ Perfect for tech learners, students, and casual users who want quick access to r
 
 1. Clone this repository  
 2. Open Chrome and go to:  
-   `chrome://extensions/`  
-3. Enable **Developer mode**  
-4. Click **Load unpacked**  
-5. Select this project’s folder
-
-➡️ The extension will load instantly and you can start using it!
+   `https://chromewebstore.google.com/detail/adeeb-technology-lab/hmgnckmfplfccnkinmmlmicpldfpnhme`   
 
 ---
 
